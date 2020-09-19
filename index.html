@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Freki</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Freki - malware analysis platform">
+    <meta name="keywords" content="Malware Analysis, Binary, Python">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom fixed-top justify-content-end">
+        <a class="navbar-brand" href="#">
+            <img id="imglogo" src="imgs/logos/freki_light_full.svg" width="100%" height="50px">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#documentation">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contribute">Contribute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="donate.html">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <h1>What is Freki?</h1>
+                    <p style="text-align: justify;">Freki is a free and open-source malware analysis platform. It was built to facilitate malware analysis and reverse engineering. It also provides a REST API, so you can query and use it in different projects.</p>
+
+                    <div class="buttons">
+                        <a class="github-button" href="https://github.com/crhenr/freki" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star crhenr/freki on GitHub">Star</a>
+                        <a class="github-button" href="https://github.com/crhenr/freki/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork crhenr/freki on GitHub">Fork</a>
+                        <a class="github-button" href="https://github.com/crhenr/freki/subscription" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch crhenr/freki on GitHub">Watch</a>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="https://crhenr.github.io/freki/main/overview.html" target="_blank"><button type="button" class="btn btn-secondary">Get started</button></a>
+                        <a href="https://github.com/crhenr/freki/archive/master.zip"><button type="button" class="btn btn-light">Download</button></a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6">
+                    <div class="laptop-img">
+                        <div class="laptop-content"></div>
+                        <img src="imgs/laptop.png"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 165"><path fill="#2e3440" fill-opacity="1" d="M0,64L60,80C120,96,240,128,360,128C480,128,600,96,720,85.3C840,75,960,85,1080,96C1200,107,1320,117,1380,122.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+            <h1 class="margin-bottom">Features</h1>
+
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <i class="fa fa-file-signature"></i>
+                            <h5>Hash extraction</h5>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <i class="fa fa-viruses"></i>
+                            <h5>VirusTotal API queries</h5>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <i class="fa fa-search-plus"></i>
+                            <h5>Static analysis of PE</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <br/>
+
+                <div class="card-deck">
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <i class="fa fa-users"></i>
+                            <h5>User management</h5>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <i class="fa fa-comments"></i>
+                            <h5>Community comments</h5>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <i class="fa fa-download"></i>
+                            <h5>Download samples</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="documentation">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#eceff4" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,58.7C384,64,480,96,576,90.7C672,85,768,43,864,58.7C960,75,1056,149,1152,176C1248,203,1344,181,1392,170.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <h1 class="margin-bottom">Documentation</h1>
+
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card custom-card">
+                        <a href="https://crhenr.github.io/freki/user/index.html" target="_blank">
+                            <div class="card-body">
+                                <h4>User manual</h4>
+                                <i class="fa fa-user-check"></i>
+                                <p>Get basic information about Freki</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card custom-card">
+                        <a href="https://crhenr.github.io/freki/admin/index.html" target="_blank">
+                            <div class="card-body">
+                                <h4>Administrator</h4>
+                                <i class="fa fa-tools"></i>
+                                <p>Learn how to deploy your own instance</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card custom-card">
+                        <a href="https://crhenr.github.io/freki/dev/index.html" target="_blank">
+                            <div class="card-body">
+                                <h4>Developer</h4>
+                                <i class="fa fa-code-branch"></i>
+                                <p>Contribute to the project</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contribute">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180"><path fill="#e5e9f0" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,64C384,75,480,117,576,117.3C672,117,768,75,864,85.3C960,96,1056,160,1152,165.3C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+            <h1 class="margin-bottom">Contribute</h1>
+
+            <div class="container">
+                <div class="card-deck">
+                    <div class="card custom-card">
+                        <a href="https://github.com/crhenr/freki" target="_blank">
+                            <div class="card-body">
+                                <h4>Share</h4>
+                                <i class="fa fa-star"></i>
+                                <p>Star our repository and share it</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-body">
+                            <h4>Code</h4>
+                            <i class="fa fa-keyboard"></i>
+                            <p>Add more features or open an issue</p>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <a href="donate.html" target="_blank">
+                            <div class="card-body">
+                                <h4>Donate</h4>
+                                <i class="fa fa-donate"></i>
+                                <p>Help us maintain the project</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180"><path fill="#2e3440" fill-opacity="1" d="M0,64L60,80C120,96,240,128,360,128C480,128,600,96,720,106.7C840,117,960,171,1080,176C1200,181,1320,139,1380,117.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+            <h1 class="margin-bottom">Contact</h1>
+
+            <h4>Feel free to send a message or contribute to the project in any way.</h4>
+
+            <div class="buttons">
+                <a href="mailto:cristianmsbr@gmail.com"><img src="imgs/logos/email.svg" width="80px" height="50px"/></a>
+                <a href="https://twitter.com/projectfreki" target="_blank"><img src="imgs/logos/twitter.svg" width="80px" height="50px"/></a>
+                <a href="https://github.com/project-freki" target="_blank"><img src="imgs/logos/github.svg" width="80px" height="50px"/></a>
+            </div>
+
+            <span>Made with ❤ by <a href="https://crhenr.xyz" target="_blank">@crhenr</a></span>
+        </section>
+    </main>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Donate - Project Freki</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e5e9f0;
+        }
+
+        #logo, #message, #homelink {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: #2e3440;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <center>
+            <a href="index.html"><img id="logo" src="imgs/logos/freki_dark_full.svg" width="200px"></a>
+
+            <h4 id="message">Thanks for supporting Freki!</h4>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick"/>
+                <input type="hidden" name="hosted_button_id" value="3P3QUZJV882HW"/>
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"/>
+                <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1"/>
+            </form>
+            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Freki on Ko-fi', '#5e81ac', 'Z8Z524EK2');kofiwidget2.draw();</script>
+
+            <p id="homelink"><a href="index.html">[HOME PAGE]</a></p>
+        </center>
+    </main>
+</body>
+</html>

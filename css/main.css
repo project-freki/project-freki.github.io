@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #2e3440;
+    background-color: #e5e9f0;
+    text-align: center;
+}
+
+i {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #2e3440;
+}
+
+a:hover {
+    color: #5e81ac;
+}
+
+div a {
+    text-decoration: none;
+}
+
+div a:hover {
+    text-decoration: none;
+}
+
+::selection {
+    background: #81a1c1;
+}
+
+.navbar-custom {
+    background-color: #2e3440 !important;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text,
+.navbar-custom a {
+    color: #eceff4;
+    font-weight: bold;
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+.custom-card {
+    color: inherit;
+    background-color: #eceff4;
+    border-radius: 8px;
+}
+
+.laptop-img {
+    background-size: contain;
+    background-clip: border-box;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.laptop-content {
+    background-image: url("https://crhenr.xyz/freki/_images/home.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 14.9%;
+    top: 6.8%;
+    bottom: 12.5%;
+    right: 14.9%;
+}
+
+.buttons {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#home {
+    color: #eceff4;
+    background-color: #2e3440;
+    margin-top: 76px;
+    padding: 75px;
+}
+
+#features {
+    background-color: #eceff4;
+}
+
+#documentation {
+    background-color: #e5e9f0;
+}
+
+#contribute {
+    background-color: #2e3440;
+}
+
+#contribute h1 {
+    color: #eceff4;
+}
+
+#contact {
+    background-color: #eceff4;
+}
+
+#contact img {
+    padding: 0 15px 0 15px;
+}
